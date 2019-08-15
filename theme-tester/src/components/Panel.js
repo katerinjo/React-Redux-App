@@ -4,12 +4,21 @@ import { connect } from 'react-redux';
 
 import { setTheme } from '../actions';
 
-const Panel = props => {
+const Panel = ({ theme, setTheme}) => {
   return (
-    <div className="panel">
-      <button>style1</button>
-      <button>style2</button>
-      <button>style3</button>
+    <div className='panel'>
+      <button
+        className={theme === 0 ? 'active-btn' : 'passive-btn'}
+        onClick={() => setTheme(0)}
+      >style0</button>
+      <button
+        className={theme === 1 ? 'active-btn' : 'passive-btn'}
+        onClick={() => setTheme(1)}
+      >style1</button>
+      <button
+        className={theme === 2 ? 'active-btn' : 'passive-btn'}
+        onClick={() => setTheme(2)}
+      >style2</button>
     </div>
   );
 };

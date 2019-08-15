@@ -58,3 +58,15 @@ table {
     @import './styles/second';
   }
 }
+
+.active-btn {
+	background-color: black;
+	color: lightgrey;
+	border: 1px solid lightgrey;
+}
+
+.passive-btn {
+	background-color: lightgrey;
+	color: darkgrey;
+	border: 1px solid darkgrey
+}
