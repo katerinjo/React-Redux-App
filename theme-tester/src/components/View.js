@@ -2,7 +2,7 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 
-import { newContent } from '../actions';
+import { refresh } from '../actions';
 
 const View = ({ content }) => {
   return (
@@ -19,4 +19,4 @@ const mapStateToProps = state => {
 }
 
 
-export default connect(mapStateToProps, { newContent })(View)
+export default connect(mapStateToProps, { refresh })(View)
